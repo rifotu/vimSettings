@@ -71,10 +71,10 @@ imap jj <ESC>
 set autoindent
 set cindent
 set pastetoggle=<f11> "hit f11 to toggle between paste mode and no paste mode
-nnoremap yy yy"+yy
-vnoremap y ygy"+y
-" global paste
-noremap gp "+p  
+"nnoremap yy yy"+yy
+"vnoremap y ygy"+y
+"" global paste
+"noremap gp "+p  
 
 set backup
 set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
@@ -84,13 +84,18 @@ set writebackup
 
 let mapleader=" "  " leader is space
 " save seesion, use vim -S next time you open
-nnoremap <leader>s : mksession<CR> 
+nnoremap <leader>s :wa!<CR> 
+
 
 "open ag.vima by ,a
 nnoremap <leader>a :Ag
-nnoremap <leader>w :NERDTree<CR>
+nnoremap <leader>e :Ex<CR>
+nnoremap <leader>w :NERDTreeToggle<CR>
 
 
+augroup filetype
+  au! BufRead,BufNewFile *.proto setfiletype proto
+augroup end
 
 nmap <F8> :TagbarToggle<CR>
 

@@ -1,5 +1,10 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
-let g:netrw_dirhist_1='/home/rifat'
-let g:netrw_dirhist_2='/home/rifat/.mission-control'
-let g:netrw_dirhist_3='/home/rifat/.mission-control/accounts'
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/home/rifat/projects/ihalink/tasks/snmpGuiClient/trials'
+let g:netrw_dirhist_2='/home/rifat/projects/ihalink/tasks/snmpGuiClient/trials/protoBuf'
+let g:netrw_dirhist_3='/home/rifat/projects/ihalink/tasks/snmpGuiClient/trials'
+let g:netrw_dirhist_4='/home/rifat/projects/ihalink/tasks/snmpGuiClient'
+let g:netrw_dirhist_5='/home/rifat/projects/ihalink/tasks'
+let g:netrw_dirhist_6='/home/rifat/projects/ihalink'
+let g:netrw_dirhist_7='/home/rifat/projects'
+let g:netrw_dirhist_8='/home/rifat/.vim'
