@@ -53,11 +53,14 @@ if filereadable("/etc/vim/vimrc.local")
 endif
 
 set background=dark
-colorscheme badwolf
+"colorscheme badwolf
+colorscheme molokai
 
 set number
+set ruler
 "set showcmd
 set tabstop=4
+set shiftwidth=4
 set expandtab
 set softtabstop=4
 set cursorline
@@ -76,6 +79,8 @@ set pastetoggle=<f11> "hit f11 to toggle between paste mode and no paste mode
 "" global paste
 "noremap gp "+p  
 
+set backspace=indent,eol,start
+
 set backup
 set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set backupskip=/tmp/*,/private/tmp*
@@ -83,14 +88,16 @@ set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set writebackup
 
 let mapleader=" "  " leader is space
-" save seesion, use vim -S next time you open
-nnoremap <leader>s :wa!<CR> 
+" save current file
+nnoremap <leader>s :w!<CR> 
+nnoremap <leader>v :tabedit $MYVIMRC<CR>
 
 
 "open ag.vima by ,a
 nnoremap <leader>a :Ag
 nnoremap <leader>e :Ex<CR>
 nnoremap <leader>w :NERDTreeToggle<CR>
+nnoremap <leader>t <C-W>w
 
 
 augroup filetype
