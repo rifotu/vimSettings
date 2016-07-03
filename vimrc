@@ -80,7 +80,7 @@ set pastetoggle=<f11> "hit f11 to toggle between paste mode and no paste mode
 "noremap gp "+p  
 
 set backspace=indent,eol,start
-
+set nowrap    
 set backup
 set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set backupskip=/tmp/*,/private/tmp*
@@ -99,6 +99,7 @@ nnoremap <leader>e :Ex<CR>
 nnoremap <leader>w :NERDTreeToggle<CR>
 nnoremap <leader>t <C-W>w
 
+set clipboard=unnamedplus
 
 augroup filetype
   au! BufRead,BufNewFile *.proto setfiletype proto
